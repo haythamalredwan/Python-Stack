@@ -64,20 +64,7 @@ print(maximum([37,2,1,-9]))
 
 # Ultimate Analysis
 def ultimate_analysis(list):
-    dictionary = {"sumTotal":0, "average":0, "minimum":list[0], "maximum":list[0], "length":0}
-    for i in range(len(list)):
-        dictionary["sumTotal"] += list[i]
-
-        dictionary["average"] = dictionary["sumTotal"]/len(list)
-
-        if list[i]<dictionary["minimum"]:
-            dictionary["minimum"] = list[i]
-        
-        if list[i]>dictionary["maximum"] :
-            dictionary["maximum"] = list[i]
-        
-        dictionary["length"] = len(list)
-
+    dictionary = {"sumTotal":sum_total(list), "average":average(list), "minimum":minimum(list), "maximum":maximum(list), "length":length(list)}
     return dictionary
 print(ultimate_analysis([37,2,1,-9]))
 
@@ -88,5 +75,6 @@ def reverse_list(list):
         list.pop(i)
     return list
 print(reverse_list([37,2,1,-9]))     
+
 
 
