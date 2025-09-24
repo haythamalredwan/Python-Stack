@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .square {
+            height: 50px;
+            width: 50px;
+        }
+
+        .light {
+            background-color: {{color1}};
+        }
+
+        .dark {
+            background-color: {{color2}};
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+        {%for i in range(x):%}
+        <div class="row">
+            {%for j in range(y):%}
+            <div class="{%if (i+j) %2 == 0 %}light{%else%}dark{%endif%} square"></div>
+            {%endfor%}
+        </div>
+        {%endfor%}
+    </div>
+</body>
+
+</html>

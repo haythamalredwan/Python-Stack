@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.row {
+    display: flex;
+}
+.square{
+    height: 50px;
+    width: 50px;
+}
+.light {
+    background-color: #ffffe0;
+}
+.dark {
+    background-color: #556b2f;
+}
