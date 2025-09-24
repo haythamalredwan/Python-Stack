@@ -3,8 +3,8 @@ for i in range (0,151) :
     print(i)
 
 # Multiples of Five
-for j in range (5,1001) :
-    print(j*5)
+for j in range (5,1001,5) :
+    print(j)
 
 # Counting, the Dojo Way
 for k in range (1,101):
@@ -33,4 +33,5 @@ mult=3
 for z in range (lowNum,heighNum+1):
     if z % mult ==0:
         print(z)
+
 
